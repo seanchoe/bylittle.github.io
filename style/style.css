@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia,Times,Times New Roman,serif;
+    background-color: #E9E9E9;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-wrapper {
+  text-align: center;
+  padding-right: 24px;
+}
+
+.logo {
+  width: 478px;
+  height: 130px;
+  background-image: url('../assets/lbl_logo.svg');
+  background-size: 478px 130px;
+  margin-right: 24px;
+  margin-bottom: 8px;
+}
+
+.nofa {
+  background-image: url('../assets/nofa.png');
+  width: 62px;
+  height: 85px;
+  background-size: 62px 85px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+.tagline {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1.4em;
+  color: #009FDD;
+  margin: 24px 0;
+  vertical-align: middle;
+}
+
+.mailchimp-wrapper {
+    text-align: center;
+}
+
+.mailchimp-wrapper input[type='email'] {
+  width: 380px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #C7C7C7;
+  font-size: 18px;
+  padding: 0 8px;
+  outline: none;
+}
+
+.mailchimp-wrapper input[type='submit'] {
+  -webkit-appearance: none;
+  background-color: #009FDD;
+  border-radius: 4px;
+  height: 44px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 14px;
+  vertical-align: top;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.mailchimp-wrapper input[type='submit']:hover {
+  background-color: #008EC6;
+}
+
+.mailchimp-wrapper input[type='submit']:active {
+  box-shadow: inset 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.mailchimp-guide {
+  color: #777777;
+  font-size: 14px;
+}
+
+.clear {
+  clear: both;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 728px;
+    height: 197px;
+    background-size: 728px 197px;
+  }
+
+  .tagline {
+    font-size: 2em;
+  }
+
+  .nofa {
+    width: 90px;
+    height: 123px;
+    background-size: 90px 123px;
+  }
+}
+
+@media (min-width: 1400px) and (min-height: 1000px) {
+  .logo {
+    width: 1048px;
+    height: 284px;
+    background-size: 1048px 284px;
+  }
+
+  .tagline {
+    font-size: 2.8em;
+  }
+
+  .nofa {
+    width: 138px;
+    height: 189px;
+    background-size: 138px 189px;
+  }
+
+  .mailchimp-guide {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    background-image: url('../assets/background_mobile.jpg');
+    justify-content: center;
+    display: block;
+  }
+
+  .logo {
+    width: 366px;
+    height: 100px;
+    background-size: 366px 100px;
+    margin: 0 auto;
+  }
+
+  .logo-wrapper {
+    padding: 0;
+    text-align: center;
+    padding-top: 160px;
+  }
+
+  .mailchimp-wrapper input[type='email'] {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mailchimp-wrapper input[type='submit'] {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .nofa {
+    width: 48px;
+    height: 66px;
+    background-size: 48px 66px;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-wrapper {
+    padding-top: 120px;
+  }
+
+  .logo {
+    width: 310px;
+    height: 84px;
+    background-size: 310px 84px;
+  }
+}
